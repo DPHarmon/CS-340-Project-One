@@ -40,3 +40,34 @@ Module: `AnimalShelter` (summary) 🏷️
   * Methods raise ValueError for missing required inputs.
   * PyMongo errors are caught and result in False or empty results as appropriate.
 
+---
+
+# Example usage ▶️
+
+* Configure credentials via environment variables or edit `__init__` for local testing.
+* Quick example:
+  
+    *   from animal_shelter.animal_shelter import AnimalShelter
+    *   shelter = AnimalShelter()
+    *   shelter.create({"name":"Fido","species":"dog","age":4})
+    *   docs = shelter.read({"species":"dog"})
+    *   shelter.update({"name":"Fido"},{"age":5})
+    *   shelter.delete({"name":"Fido"})
+ 
+ # Demonstration 📸
+
+  MongoDB import execution: ([images/mong_import.png](https://github.com/DPHarmon/CS-340-Project-One/blob/main/images/mong_import.png))
+
+  User authentication execution: [images/create_authorized_user.png
+](https://github.com/DPHarmon/CS-340-Project-One/blob/main/images/create_authorized_user.png)
+
+  CRUD functionality tests:
+   
+  [ images/CRUD_Create.png](https://github.com/DPHarmon/CS-340-Project-One/blob/main/images/CRUD_Create.png)
+  
+   [images/CRUD_Read.png](https://github.com/DPHarmon/CS-340-Project-One/blob/main/images/CRUD_Read.png)
+   
+   [images/CRUD_Update.png](https://github.com/DPHarmon/CS-340-Project-One/blob/main/images/CRUD_Update.png)
+   
+   [images/CRUD_Delete.png](https://github.com/DPHarmon/CS-340-Project-One/blob/main/images/CRUD_Delete.png)
+   
